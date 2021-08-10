@@ -1,0 +1,172 @@
+#modal--container {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.modal {
+  max-width: 840px;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  .inner {
+    padding: 54px 45px 50px;
+    background-color: $white;
+    border-radius: 1rem;
+    max-width: 100%;
+  }
+
+  &__header {
+    color: $mine-shaft;
+    font-size: 36px;
+    font-family: $header-font-family;
+    margin-bottom: 2.5rem;
+    display: block;
+  }
+
+  input[type='radio'] {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+
+  input[type='radio']:checked + .modal__label {
+    background-color: $mine-shaft;
+    color: $white;
+  }
+
+  &__label {
+    color: $mine-shaft;
+    border: 1px solid $mine-shaft;
+    border-radius: 8px;
+    transition: $mid-transition;
+    padding: 10px 30px;
+    margin-right: 1rem;
+
+    &:hover {
+      border-color: $dodger-blue;
+      color: $dodger-blue;
+      cursor: pointer;
+    }
+  }
+
+  .label {
+    padding-bottom: 0.5rem;
+    display: block;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 2px solid $black;
+    outline: none;
+    width: 200px;
+
+    &:focus {
+      border-color: $dodger-blue;
+    }
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+
+    &.submit {
+      justify-content: space-between;
+    }
+
+    &.textarea {
+      flex-direction: column;
+      align-items: flex-start;
+
+      label {
+        font-size: 14px;
+        margin-bottom: 1rem;
+      }
+
+      textarea {
+        border: none;
+        border-bottom: 2px solid $black;
+        outline: none;
+        width: 100%;
+        height: 100px;
+        resize: none;
+        overflow: auto;
+        transition: $mid-transition;
+
+        &:focus {
+          border-color: $dodger-blue;
+        }
+      }
+    }
+  }
+
+  .success {
+    position: relative;
+    overflow: hidden;
+
+    .inner {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        filter: blur(60px);
+        background: linear-gradient(89.9deg, #f3de2c 14.3%, #b0ff92 31.54%, #6efafb 54.72%, #ff6e8e 93.17%);
+        z-index: 0;
+      }
+
+      header,
+      div {
+        z-index: 2;
+        position: relative;
+      }
+    }
+  }
+
+  &__button {
+    background-color: $mine-shaft;
+    color: $white;
+    border: 1px solid $mine-shaft;
+    border-radius: 8px;
+    transition: $mid-transition;
+    padding: 10px 30px;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    display: inline-block;
+
+    &.button-prev {
+      color: $mine-shaft;
+      background-color: transparent;
+    }
+
+    &:hover {
+      border-color: $dodger-blue;
+      color: $white;
+      background-color: $dodger-blue;
+      cursor: pointer;
+
+      &.button-prev {
+        border-color: $mine-shaft;
+        color: $white;
+        background-color: $mine-shaft;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.tech {
+  padding-top: 90px;
+
+  &__header {
+    font-size: 40px;
+    color: $mine-shaft;
+    padding-bottom: 80px;
+  }
+
+  &__item {
+    padding: 50px 60px 40px;
+    background-color: $mine-shaft;
+    border-radius: 1rem;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+  
+  &__label {
+      font-family: $font-family;
+  }
+  
+}

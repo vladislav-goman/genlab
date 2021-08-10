@@ -4,8 +4,11 @@
 // Font
 @import './fonts/font.scss';
 // Share
-@import './share/variables.scss';
+@import './share/_variables.scss';
 @import './share/mixins.scss';
 // Styling
 @import './components/main.scss';
 @import './components/main-scene.scss';
+@import './components/why.scss';
+@import './components/modal.scss';
+@import './components/tech.scss';

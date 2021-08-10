@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
     <title>Genlab</title>
   </head>
   <body>
-
     <section class="main-scene">
       <div class="container">
         <div class="row">
@@ -20,23 +19,191 @@
 
               <header class="main-scene__header">
                 <div class="main-scene__logo--container">
-                  <!-- <img src="" alt="" class="main-scene__logo" /> -->
-                  <h2 class="main-scene__logo">Genlab</h2>
+                  <img src="/assets/logo.png" alt="Agenda logo" class="main-scene__logo" />
                 </div>
                 EN
               </header>
 
-              <h1 class="main-scene__label">Development.<br />Idea.<br />Design.</h1>
+              <h1 class="main-scene__label">Idea.<br />Design.<br />Development.</h1>
 
-              <p class="main-scene__description">Web <span class="dot"></span> Mobile (native and cross platform) <span class="dot"></span> ML and Neural network solutions <span class="dot"></span> Blockchain</p>
+              <p class="main-scene__description">
+                Web <span class="dot"></span> Mobile <span class="dot"></span> Design &amp; 3D <span class="dot"></span> ML and Neural
+                network solutions <span class="dot"></span> Blockchain
+              </p>
 
-              <button class="main-scene__button">Let’s collaborate</button>
-
+              <button id="modal--button" class="main-scene__button">Let’s collaborate</button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="tech">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="tech__header">Technologies that we are basically using:</h2>
+
+            <div class="swiper-container tech-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="tech__item">
+                    <img src="" alt="" class="tech__image" />
+                    <h4 class="tech__label">Angular</h4>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="tech__item">
+                    <img src="" alt="" class="tech__image" />
+                    <h4 class="tech__label">React</h4>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="tech__item">
+                    <img src="" alt="" class="tech__image" />
+                    <h4 class="tech__label">Ionic</h4>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="tech__item">
+                    <img src="" alt="" class="tech__image" />
+                    <h4 class="tech__label">Node.js</h4>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="tech__item">
+                    <img src="" alt="" class="tech__image" />
+                    <h4 class="tech__label">Hybris</h4>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="why__header">Why Labs?</h2>
+          </div>
+          <div class="col-md-6">
+            <article class="why__item">
+              <div class="graphic--container"><div class="graphic"></div></div>
+              <h4 class="header">Ambitious Team</h4>
+              <p class="description">
+                Challenges are everything. There are no unsolved problems for us. We will find a decision in every situation. Thriving is
+                possible only overcoming difficulties.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="why__item">
+              <div class="graphic--container"><div class="graphic lime"></div></div>
+              <h4 class="header">Competitive price</h4>
+              <p class="description">
+                It cannot be cheap and of high quality at the same time. But we always try to find a compromising decision which directly
+                depends on specification of a project.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="why__item">
+              <div class="graphic--container"><div class="graphic cyan"></div></div>
+              <h4 class="header">Project from A-Z</h4>
+              <p class="description">
+                We do full circle of development: technical task and analysis-design-development and testing-production-implementation and
+                maintenance.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="why__item">
+              <div class="graphic--container"><div class="graphic pink"></div></div>
+              <h4 class="header">Uniqueness</h4>
+              <p class="description">We guarantee unique solutions at the design and development stages.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="modal--container">
+      <aside id="modal" class="modal">
+        <form class="modal__form">
+          <div class="swiper-container modal-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="inner">
+                  <header class="modal__header">What type of service are you interested in?</header>
+                  <div class="input-group">
+                    <input name="services" id="dev" value="development" type="radio" />
+                    <label class="modal__label" for="dev">Development</label>
+                    <input name="services" id="des" value="Design" type="radio" />
+                    <label class="modal__label" for="des">Design</label>
+                    <input name="services" id="oth" value="other" type="radio" />
+                    <label class="modal__label" for="oth">Other</label>
+                  </div>
+
+                  <div class="modal__button button-next">Next</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="inner">
+                  <header class="modal__header">Describe in free form the problem you want to solve</header>
+                  <div class="input-group textarea">
+                    <label for="taskInput">Describe your task</label>
+                    <textarea name="task" id="taskInput" cols="30" rows="10" required></textarea>
+                  </div>
+
+                  <div class="modal__button button-prev">Back</div>
+                  <div class="modal__button button-next">Next</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="inner">
+                  <header class="modal__header">Choose a communication method</header>
+                  <div class="input-group submit">
+                    <div class="input">
+                      <label class="label" for="email">Email</label>
+                      <input class="modal__input" name="email" id="email" placeholder="Email" type="email" />
+                    </div>
+                    <div class="input">
+                      <label class="label" for="telegram">Telegram</label>
+                      <input class="modal__input" name="telegram" id="telegram" placeholder="Telegram" type="text" />
+                    </div>
+                    <div class="input">
+                      <label class="label" for="skype">Skype</label>
+                      <input class="modal__input" name="skype" id="skype" placeholder="Skype" type="text" />
+                    </div>
+                  </div>
+
+                  <div class="modal__button button-prev">Back</div>
+                  <button type="submit" class="modal__button button-next">Send</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide success">
+                <div class="inner">
+                  <header class="modal__header">Success! We got your information.</header>
+                  <div class="input-group textarea">
+                    <label for="taskInput">Labs will contact you within 24 hrs</label>
+                  </div>
+                  <div class="modal__button close">Close</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </aside>
+    </div>
   </body>
 </html>
