@@ -4,8 +4,19 @@ import 'swiper/swiper-bundle.css';
 SwiperCore.use([Navigation, EffectFade]);
 
 new SwiperCore('.tech-swiper', {
-  slidesPerView: 5,
+  slidesPerView: 1,
   spaceBetween: 40,
+  breakpoints: {
+    1000: {
+      slidesPerView: 5,
+    },
+    600: {
+      slidesPerView: 3,
+    },
+    400: {
+      slidesPerView: 2,
+    }
+  }
 });
 
 new SwiperCore('.modal-swiper', {
@@ -13,6 +24,7 @@ new SwiperCore('.modal-swiper', {
   fadeEffect: {
     crossFade: true,
   },
+  autoHeight: true,
   simulateTouch: false,
   navigation: {
     nextEl: '.button-next',
@@ -20,15 +32,25 @@ new SwiperCore('.modal-swiper', {
   },
 });
 
+new SwiperCore('.portfolio-swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 40,
+  freeMode: true,
+  grabCursor: true,
+});
+
 const modal = document.getElementById('modal--container');
 
-const btn = document.getElementById('modal--button');
+const btnArr = document.querySelectorAll('.main-scene__button');
 
 const closeArray = document.querySelectorAll('.close');
 
-btn.onclick = function () {
-  modal.classList.add('visible');
-};
+btnArr.forEach(
+  (btn) =>
+    (btn.onclick = function () {
+      modal.classList.add('visible');
+    })
+);
 
 closeArray.forEach((closeItem) => {
   closeItem.addEventListener('click', () => {

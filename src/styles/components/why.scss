@@ -1,22 +1,36 @@
 .why {
   padding-top: 90px;
+  @include use-mobile() {
+    padding-top: 60px;
+  }
 
   &__header {
     font-size: 47px;
     color: $mine-shaft;
     padding-bottom: 80px;
     text-align: center;
+    @include use-mobile() {
+      font-size: 28px;
+      padding-bottom: 50px;
+    }
   }
 
   &__item {
     text-align: center;
     padding: 0 45px 72px;
+    @include use-mobile() {
+      padding: 0 25px 55px;
+    }
 
     .header {
       font-family: $font-family;
       font-size: 24px;
       font-weight: 600;
       padding-bottom: 8px;
+      @include use-mobile() {
+        font-size: 20px;
+        padding-bottom: 8px;
+      }
     }
 
     .graphic {
@@ -26,6 +40,10 @@
         background-color: #f3de2c;
         filter: blur(30px);
         animation: glow 3s infinite;
+        @include use-mobile() {
+          width: 40px;
+          height: 40px;
+        }
 
         &.lime {
           background-color: #b0ff92;
@@ -43,14 +61,28 @@
           0% {
             width: 65px;
             height: 65px;
+            @include use-mobile() {
+              width: 40px;
+              height: 40px;
+            }
+    
           }
           50% {
             width: 130px;
             height: 130px;
+            @include use-mobile() {
+              width: 80px;
+              height: 80px;
+            }
+    
           }
           100% {
             width: 65px;
             height: 65px;
+            @include use-mobile() {
+              width: 40px;
+              height: 40px;
+            }
           }
         }
       }
@@ -62,6 +94,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include use-mobile() {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }

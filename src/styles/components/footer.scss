@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  padding: 100px 0 2rem;
+  background-color: $primary-color;
+  color: $white;
+
+  @include use-mobile() {
+    padding: 60px 0 1.5rem;
+  }
+
+  &--inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include use-mobile() {
+      flex-direction: column;
+      height: 120px;
+    }
+  }
+
+  &__email {
+    text-decoration: none;
+    color: $white;
+    transition: $mid-transition;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &__logo {
+    height: 24px;
+
+    @include use-mobile() {
+      height: 18px;
+    }
+  }
+}

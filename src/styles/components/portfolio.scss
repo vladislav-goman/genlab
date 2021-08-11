@@ -1,0 +1,44 @@
+.portfolio {
+  background-color: $primary-color;
+  padding-top: 60px;
+  @include use-mobile() {
+    padding-top: 50px;
+  }
+
+  &__header {
+    font-size: 40px;
+    color: $primary-color;
+    padding-bottom: 70px;
+    text-align: center;
+    color: $white;
+    @include use-mobile() {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+  }
+
+  &__item {
+    border-radius: 1rem;
+    background-color: $white;
+    height: 340px;
+    padding: 25px;
+    @include use-mobile() {
+        height: 180px;
+        padding: 1rem;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .swiper-slide {
+    width: 45%;
+    @include use-mobile() {
+        width: 80%;
+    }
+  }
+
+}
