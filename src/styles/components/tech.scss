@@ -4,6 +4,10 @@
     padding-top: 60px;
   }
 
+  .tech-swiper {
+    padding-bottom: 36px;
+  }
+
   &__header {
     font-size: 40px;
     color: $primary-color;
@@ -38,6 +42,9 @@
       color: $secondary-color;
       path {
         fill: $secondary-color;
+      }
+      path.no-effect {
+        fill: $white;
       }
     }
   }
