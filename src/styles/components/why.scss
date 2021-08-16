@@ -40,6 +40,8 @@
         background-color: #f3de2c;
         border-radius: 50%;
         filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
         animation: glow 3s infinite;
         @include use-mobile() {
           width: 40px;
@@ -66,7 +68,6 @@
               width: 40px;
               height: 40px;
             }
-    
           }
           50% {
             width: 130px;
@@ -75,7 +76,6 @@
               width: 80px;
               height: 80px;
             }
-    
           }
           100% {
             width: 65px;

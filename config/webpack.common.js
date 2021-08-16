@@ -25,7 +25,6 @@ module.exports = {
       ],
     }),
     new HtmlWebpackPlugin({
-      title: 'Клуб "Extreme"',
       favicon: paths.src + '/images/favicon.ico',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
