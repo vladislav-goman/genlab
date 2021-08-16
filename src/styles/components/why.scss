@@ -38,6 +38,7 @@
         width: 65px;
         height: 65px;
         background-color: #f3de2c;
+        border-radius: 50%;
         filter: blur(30px);
         animation: glow 3s infinite;
         @include use-mobile() {
