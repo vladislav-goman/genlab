@@ -5,7 +5,8 @@
   color: $white;
 
   @include use-mobile() {
-    min-height: 80vh;
+    height: 80vh;
+    min-height: 400px;
   }
 
   &--inner {
@@ -15,7 +16,8 @@
     min-height: 100vh;
 
     @include use-mobile() {
-      min-height: 80vh;
+      height: 80vh;
+      min-height: 400px;
     }
   }
 
@@ -41,6 +43,7 @@
     @include use-mobile() {
       font-size: 22px;
       line-height: 35px;
+      max-width: 100%;
     }
 
     .dot:empty {
