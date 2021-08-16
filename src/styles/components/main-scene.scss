@@ -134,11 +134,13 @@
   }
 
   &__logo {
-    height: 20px;
+    height: 40px;
     margin-right: 2rem;
+    position: relative;
+    left: -7px;
 
     @include use-mobile() {
-      height: 12px;
+      height: 32px;
     }
   }
 }

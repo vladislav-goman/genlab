@@ -19,7 +19,7 @@ new SwiperCore('.tech-swiper', {
     600: {
       slidesPerView: 3,
     },
-    400: {
+    460: {
       slidesPerView: 2,
     },
   },
@@ -50,7 +50,7 @@ new SwiperCore('.portfolio-swiper', {
     delay: 2500,
   },
   breakpoints: {
-    400: {
+    460: {
       slidesPerView: 2,
     },
   },

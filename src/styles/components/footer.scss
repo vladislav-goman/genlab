@@ -30,10 +30,10 @@
   }
 
   &__logo {
-    height: 24px;
+    height: 40px;
 
     @include use-mobile() {
-      height: 18px;
+      height: 32px;
     }
   }
 }
