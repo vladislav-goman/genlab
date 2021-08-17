@@ -5,8 +5,8 @@
   color: $white;
 
   @include use-mobile() {
-    height: 80vh;
-    min-height: 400px;
+    height: 100vh;
+    min-height: 550px;
   }
 
   &--inner {
@@ -16,8 +16,8 @@
     min-height: 100vh;
 
     @include use-mobile() {
-      height: 80vh;
-      min-height: 400px;
+      height: 100vh;
+      min-height: 550px;
     }
   }
 
@@ -152,7 +152,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background: linear-gradient(0deg, $primary-color, transparent);
+  background: linear-gradient(to top, $primary-color, rgba(35, 35, 35, 0));
   width: 50%;
   height: 30%;
   z-index: 10;
@@ -164,7 +164,7 @@
   &.top {
     top: 0;
     bottom: unset;
-    background: linear-gradient(0deg, transparent, $primary-color);
+    background: linear-gradient(to top, rgba(35, 35, 35, 0), $primary-color);
   }
 }
 

@@ -1,6 +1,6 @@
-import SwiperCore, { Navigation, EffectFade, Pagination, au } from 'swiper/core';
+import SwiperCore, { Navigation, EffectFade, Pagination, Autoplay } from 'swiper/core';
 import 'swiper/swiper-bundle.css';
-SwiperCore.use([Navigation, EffectFade, Pagination]);
+SwiperCore.use([Navigation, EffectFade, Pagination, Autoplay]);
 
 new SwiperCore('.tech-swiper', {
   slidesPerView: 1,
@@ -11,6 +11,8 @@ new SwiperCore('.tech-swiper', {
   },
   autoplay: {
     delay: 2500,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
   },
   breakpoints: {
     1000: {
@@ -48,6 +50,8 @@ new SwiperCore('.portfolio-swiper', {
   },
   autoplay: {
     delay: 2500,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
   },
   breakpoints: {
     460: {
