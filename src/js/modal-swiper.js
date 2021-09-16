@@ -27,7 +27,7 @@ new SwiperCore('.tech-swiper', {
   },
 });
 
-new SwiperCore('.modal-swiper', {
+export const modalSwiper = new SwiperCore('.modal-swiper', {
   effect: 'fade',
   fadeEffect: {
     crossFade: true,
